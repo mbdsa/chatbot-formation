@@ -1,0 +1,39 @@
+[
+    {
+      "nom": "SEO (Référencement naturel)",
+      "keywords": ["seo", "référencement naturel", "google"],
+      "description": "Apprends à optimiser la visibilité d'un site sur Google.",
+      "details": "Tu apprendras à analyser des mots-clés, optimiser le contenu et le code de ton site, comprendre l’algorithme de Google et utiliser des outils comme Google Search Console.",
+      "duree": "4 semaines",
+      "tarif": "129€",
+      "lien": "https://formation.digital-marketing.com/seo"
+    },
+    {
+      "nom": "Publicité en ligne (Google Ads & Facebook Ads)",
+      "keywords": ["ads", "publicité", "facebook ads", "google ads", "campagne pub"],
+      "description": "Crée et gère des campagnes publicitaires performantes.",
+      "details": "Tu apprendras à créer des annonces ciblées, définir un budget, interpréter les résultats et optimiser tes campagnes pour plus de conversions.",
+      "duree": "3 semaines",
+      "tarif": "149€",
+      "lien": "https://formation.digital-marketing.com/ads"
+    },
+    {
+      "nom": "Marketing de contenu",
+      "keywords": ["contenu", "marketing de contenu", "copywriting", "stratégie contenu"],
+      "description": "Crée du contenu impactant et engageant pour ton audience.",
+      "details": "Tu verras comment construire une stratégie éditoriale, écrire du contenu optimisé, utiliser des calendriers éditoriaux et booster l’engagement.",
+      "duree": "2 semaines",
+      "tarif": "119€",
+      "lien": "https://formation.digital-marketing.com/contenu"
+    },
+    {
+      "nom": "Réseaux sociaux",
+      "keywords": ["réseaux sociaux", "instagram", "facebook", "tiktok", "linkedin"],
+      "description": "Deviens expert des réseaux sociaux : Insta, Facebook, TikTok, LinkedIn.",
+      "details": "Tu apprendras à créer du contenu adapté à chaque réseau, planifier des publications, analyser les statistiques, et lancer des campagnes sponsorisées efficaces.",
+      "duree": "4 semaines",
+      "tarif": "139€",
+      "lien": "https://formation.digital-marketing.com/socialmedia"
+    }
+  ]
+  

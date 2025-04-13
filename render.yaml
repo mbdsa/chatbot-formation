@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: chatbot-flask
+    env: python
+    plan: free
+    region: frankfurt
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python src/chatbot_api_flask.py"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false

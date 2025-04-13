@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Formation IA</title>
+  <link rel="stylesheet" href="/styles/chatbot-widget.css" />
+</head>
+
+<body>
+  <!-- Avatar flottant -->
+  <div id="chat-launcher">
+    <img src="/img/avatar-chatbot.png" alt="Chatbot Avatar" class="floating-avatar" id="toggle-chat" />
+  </div>
+
+  <!-- Fenêtre de chat -->
+  <div id="chat-widget">
+    <div id="chat-box"></div>
+    <div id="chat-input">
+      <input type="text" id="user-input" placeholder="Pose ta question ici..." />
+      <button id="send-btn">Envoyer</button>
+    </div>
+  </div>
+
+  <script src="/scripts/chatbot-widget.js"></script>
+</body>
+</html>
