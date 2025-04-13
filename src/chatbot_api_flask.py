@@ -163,5 +163,10 @@ def chatbot_response():
         return jsonify({"response": f"Erreur API : {str(e)}"}), 500
 
 
+import os  # mets-le en haut du fichier avec les autres imports
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+
+
