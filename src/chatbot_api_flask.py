@@ -126,7 +126,7 @@ def chatbot_response():
             response.set_cookie("history", json.dumps(message_history), max_age=3600)
             return response
 
-    # === Lien direct si prêt
+    # === Lien direct si prêt ===
     if progression == "pret":
         training_link = "Voici un lien pour commencer ta formation : https://formation.digital-marketing.com/start"
         message_history.append({"role": "assistant", "content": training_link})
@@ -134,10 +134,10 @@ def chatbot_response():
         response.set_cookie("history", json.dumps(message_history), max_age=3600)
         return response
 
-    # === Génération IA + Fallback si flou
+    # === Génération IA + Fallback si flou ===
     try:
         completion = client.chat.completions.create(
-            model="gpt-4-turbo",
+            model="gpt-4-1106-preview",
             messages=message_history,
             temperature=0.7
         )
@@ -149,10 +149,7 @@ def chatbot_response():
             "👉 https://formation.digital-marketing.com/contact"
         )
 
-        if not gpt_response or "je ne sais pas" in gpt_response.lower():
-            final_response = fallback_text
-        else:
-            final_response = gpt_response
+        final_response = fallback_text if not gpt_response or "je ne sais pas" in gpt_response.lower() else gpt_response
 
         message_history.append({"role": "assistant", "content": final_response})
         response = make_response(jsonify({"response": final_response}))
@@ -162,11 +159,6 @@ def chatbot_response():
     except Exception as e:
         return jsonify({"response": f"Erreur API : {str(e)}"}), 500
 
-
-import os  # mets-le en haut du fichier avec les autres imports
-
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
-
-
